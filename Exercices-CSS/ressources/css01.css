@@ -1,0 +1,35 @@
+*{
+    background-color: #C6C0A0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: #7D775C;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+h3{
+    color: #7D775C;
+    font-weight: bold;
+    font-size: 130%;
+    letter-spacing: 1px;
+}
+
+li{
+    line-height: 1.5;
+}
+
+#temps{
+    color:red;
+    font-size: 130%;
+    text-decoration: underline
+    ;
+}
+
+span{
+    color: green;
+}
