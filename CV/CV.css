@@ -2,31 +2,45 @@
     margin:0;
 }
 
-#header{
-    background-color: #61a3ba;
+.container{
     color: white;
-    text-align: center;
+    max-width: 15000px;
+    margin: 0 auto;
+    padding:  30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0, 3);
+    margin: 0;
+    background-color: #61a3ba;
+    
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 h1{
-    position: relative;
     font-size: 400%;
-    margin:auto;
+    margin: 0%;
+    margin-top: 20px;
 }
 
 h2{
     font-size: 250%;
     margin-top: 0%;
+    margin: 0%;
 }
 
 #profil{
-    position: absolute;
-    border: 1px solid black;
-    float: right;
     width: 200px;
-    margin-top: -95px;
-    right: 50px;
-    z-index: 1;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 20px 5px 0;
+    border: 2px solid #813731;
 }
 
 #content{
@@ -97,7 +111,8 @@ progress {
 aside{
     position: relative;
     display: inline-block;
-    height: auto;
+    margin: auto;
+    max-height: 1200px;
     background-color: #813731;
     color: azure;
     border: 2px solid #61a3ba;;
@@ -160,16 +175,12 @@ header,main,aside {
 }
 
 @media screen and (min-width: 960px) {
-    header, main {
-      max-width: 70%;
-    }
+
 
     aside {
       width: 30%;
       position: absolute;
-      top: 120px;
-      right: 0;
-      bottom: 0;
+      height: 750px;
     }
 
     progress {
