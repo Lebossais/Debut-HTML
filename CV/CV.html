@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/165b1f329e.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" type="text/css" href="CV.css">
     <title>Document</title>
 </head>
@@ -11,7 +12,7 @@
     <div id="header">
         <h1>Benjamin De Coster</h1>
         <h2>Concepteur Développeur d'Applications</h2>
-        <img id="profil" class="profil" src="profil.jpg" alt="Photo de Profil"></img>
+        <img id="profil" class="profil" src="Image/profil.jpg" alt="Photo de Profil"></img>
     </div>
     <div>
         <section id="content">
@@ -20,46 +21,64 @@
                 <ul>
                     <li><span id="intitule">Formation de Concepteur Développeur d’Application</span> 
                         <br>
-                        AFPA – Pompey – 2023-2024 ( en cours )
+                        AFPA - Pompey - 2023-2024 ( en cours )
                         </li>
                     <li><span id="intitule">BTM Chocolatier-Confiseur (Alternance)</span>
                         <br>
-                        URMA – Le Mans – 2021-2022 – Le Quernon d’Ardoise
+                        URMA - Le Mans - 2021-2022 - Le Quernon d’Ardoise
                     </li>
                     <li><span id="intitule">Médaille d’argent départementale du Meilleur Apprenti
                         Chocolatier de France 2019</span>
                         </li>
-                    <li><span id="intitule">BTM Pâtissier - confiseur - glacier – traiteur (Alternance)</span>
+                    <li><span id="intitule">BTM Pâtissier - confiseur - glacier - traiteur (Alternance)</span>
                         <br>
-                        C.E.F.R.A.L - Dunkerque - 2019-2021 – Château de Beaulieu
+                        C.E.F.R.A.L - Dunkerque - 2019-2021 - Château de Beaulieu
                         </li>
                     <li><span id="intitule">Cap Chocolatier Confiseur</span>
                         <br>
                         Notre Dame de la Providence - Orchies - 2018-2019
                         </li>
-                    <li><span id="intitule">Bac professionnel Boulangerie – Pâtisserie</span>
+                    <li><span id="intitule">Bac professionnel Boulangerie - Pâtisserie</span>
                         <br>
-                        Notre Dame de la Providence – Orchies – 2015-2018
+                        Notre Dame de la Providence - Orchies - 2015-2018
                         </li>
                 </ul>
             </article>
             <div>
                 <h3 class="head-border">Technologies</h3>
-                <img> Image 1 <img> Image Barre 1 <img> Image 4 <img> Image Barre 4 </img></img></img></img><br>
-                <img> Image 2 <img> Image Barre 2 <img> Image 5 <img> Image Barre 5 </img></img></img></img><br>
-                <img> Image 3 <img> Image Barre 3 <img> Image 6 <img> Image Barre 6 </img></img></img></img><br>
+                <div class="techno">
+
+                <div class="e">
+                    <img id="icon" class="icon" src="Image/java.png" alt="Logo de Java"> <progress value="80" max="100"></progress> 
+                    <img id="icon" class="icon" src="Image/mysql.png" alt="Logo de Java"> <progress value="90" max="100"></progress> </img></img>
+                </div>
+                
+                <div class="e">
+                <img id="icon" class="icon" src="Image/css-3.png" alt="Logo de Java"> <progress value="65" max="100"></progress> 
+                <img id="icon" class="icon" src="Image/github.png" alt="Logo de Java"> <progress value="70" max="100"></progress> </img></img>
+                </div>
+
+                <div class="e">
+                <img id="icon" class="icon" src="Image/html-5.png" alt="Logo de Java"> <progress value="75" max="100"></progress> 
+                <img id="icon" class="icon" src="Image/java.png" alt="Logo de Java"> <progress value="25" max="100"></progress> </img></img>
+                </div>
+            </div>
             </div>
             <article>
                 <h3 class="head-border">Expériences</h3>
                 <ul>
-                    <li>La Petite Marquise / Angers — Apprenti/chocolatier
+                    <li><span id="intitule">La Petite Marquise / Angers - Apprenti/chocolatier</span>
+                        <br>
                         Septembre 2021 - Août 2022 (1 an)</li>
-                    <li>Château de Beaulieu, Busnes - Apprenti/Pâtissier
+                    <li><span id="intitule">Château de Beaulieu, Busnes - Apprenti/Pâtissier</span>
+                        <br>
                         Septembre 2019 - Juillet 2021
                         </li>
-                    <li>Maison Méert, Lille - Stagiaire/Chocolatier
+                    <li><span id="intitule">Maison Méert, Lille - Stagiaire/Chocolatier</span>
+                        <br>
                         18 Février 2019 - 13 Avril 2019 (2 Mois)</li>
-                    <li>Parlement Européen, Strasbourg – Intérimaire
+                    <li><span id="intitule">Parlement Européen, Strasbourg - Intérimaire</span>
+                        <br>
                         Décembre 2018</li>
                 </ul>
             </article>
@@ -67,49 +86,51 @@
 
         <aside>
             <div>
-                <h3>A propos de moi</h3>
+                <h3 class = "head-aside">A propos de moi</h3>
                 <ul>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        49 Rue de la Gare LIVERDUN 54460
+                        <span id="info">49 Rue de la Gare LIVERDUN 54460</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                         (+33)6 81 77 55 96
+                         <span id="info">(+33)6 81 77 55 96</span>
                         </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                         BenjaminDC59@gmail.com
+                         <span id="info">BenjaminDC59@gmail.com</span>
                         </li>
                     <li>
                         <i class="fa-solid fa-car-side"></i>
-                         Permis B - Véhiculé
+                         <span id="info">Permis B - Véhiculé</span>
                         </li>
                 </ul>
             </div>
             <div>
-                <h3>Mon Profil</h3>
+                <h3 class = "head-aside">Mon Profil</h3>
                 <article>
-                    J’aime découvrir de nouvelles
-                    méthodes et technologies. Je
-                    suis polyvalent et je suis
-                    capable de m’adapter
-                    facilement.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quod consectetur maxime dolorum labore quos itaque laborum 
+                    earum ipsa nemo, quasi error fugit quisquam quia unde. 
+                    Placeat adipisci officiis quod hic corporis debitis, enim 
+                    sequi distinctio facere totam est consequuntur labore, eaque, 
+                    dolorum repellendus? Id aperiam, laudantium ex numquam 
+                    recusandae doloribus?
                 </article>
             </div>
             <div>
-                <h3>Langues</h3>
+                <h3 class = "head-aside">Langues</h3>
                 <ul>
-                    <li> Fançais : Langue Maternelle </li>
-                    <li> Anglais : Avancé </li>
+                    <li> <span id="intitule"> Fançais :</span> Langue Maternelle </li>
+                    <li> <span id="intitule"> Anglais :</span> Avancé </li>
                 </ul>
             </div>
             <div>
-                <h3>Passions</h3>
+                <h3 class = "head-aside">Passions</h3>
                 <ul>
-                    <li> Jeu de rôle </li>
-                    <li> Equitation </li>
-                    <li> Jeux vidéos </li>
+                    <li> <span id="info"> Jeu de rôle </span> </li>
+                    <li> <span id="info"> Equitation </span></li>
+                    <li> <span id="info"> Jeux vidéos </span> </li>
                 </ul>
             </div>
         </aside>

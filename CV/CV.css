@@ -1,19 +1,22 @@
+*{
+    margin:0;
+}
+
 #header{
     background-color: #61a3ba;
     color: white;
     text-align: center;
-    margin: 0px ;
 }
 
 h1{
     position: relative;
     font-size: 400%;
-    margin: 0px 0px 0px -200px
+    margin:auto;
 }
 
 h2{
     font-size: 250%;
-    margin: 0px 0px 0px -200px
+    margin-top: 0%;
 }
 
 #profil{
@@ -29,7 +32,7 @@ h2{
 #content{
     display: inline-block;
     vertical-align: top;
-    max-width: none;
+    width: 70%;
 }
 
 .head-border {
@@ -41,7 +44,7 @@ h2{
 .head-border:before,
 .head-border:after {
     content: "";
-    height: 1px;
+    height: 2px;
     flex-grow: 1;
     background-color: #666;
 }
@@ -54,16 +57,124 @@ h2{
     margin-left: 1rem;
 }
 
+.techno {
+    margin-top: 10px;
+    display: grid;
+    grid-template : auto;
+    justify-content: center;
+}
+
+#icon{
+    height: 60px;
+}
+
+progress {
+    -webkit-appearance: none;
+
+  }
+
+  ::-webkit-progress-value {
+    background-color: #813731;
+  }
+
+  ::-webkit-progress-bar {
+    background-color: #61a3ba;
+  }
+
+
+
 #intitule{
     font-weight: bold;
     font-size: large;
-    
+    line-height: 1.5;
 }
 
+#info{
+    line-height: 1.5;
+}
+
+
 aside{
+    position: relative;
+    display: inline-block;
+    height: auto;
     background-color: #813731;
     color: azure;
     border: 2px solid #61a3ba;;
-    width: min-content;
-    z-index: 2;
+    z-index: 0;
+    font-size: large;
 }
+
+.head-aside {
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+}
+ 
+.head-aside:before,
+.head-aside:after {
+    content: "";
+    height: 2px;
+    flex-grow: 1;
+    background-color: #61a3ba;
+}
+ 
+.head-aside:before {
+    margin-right: 1rem;
+}
+ 
+.head-aside:after {
+    margin-left: 1rem;
+}
+
+header,main,aside {
+    min-height: 100px;
+  }
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+
+    #content {
+      float: left;
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+      float: left;
+    }
+    .techno {
+        margin-top: 10px;
+        display: grid;
+        justify-content: center;
+    }
+    .e{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .icon{
+        margin-bottom: 20px;
+    }
+    progress {
+        margin: 30px 50px 20px 0px;
+      }
+
+}
+
+@media screen and (min-width: 960px) {
+    header, main {
+      max-width: 70%;
+    }
+
+    aside {
+      width: 30%;
+      position: absolute;
+      top: 120px;
+      right: 0;
+      bottom: 0;
+    }
+
+    progress {
+        margin: 0px 50px 20px 25px;
+    
+      }
+
+  }
