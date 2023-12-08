@@ -1,5 +1,15 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.nav-item{
-    float:right
-}
+@import "./utils/variables";
+
+@import "./base/base";
+@import "./base/typographie";
+
+// Components ici
+
+@import "./layout/header";
+@import "./layout/container";
+@import "./layout/form";
+@import "./layout/nav"
+
+// les pages ici
